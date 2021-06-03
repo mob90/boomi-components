@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>db9c23e5-0b90-4a4c-a05f-ce713e42d1d9</Id>
+  <Type>transform.map</Type>
+  <Name>New Map 6</Name>
+  <Version>4</Version>
+  <FolderId name="Training-Bakkali-Mohammed/Professional Developer">
+  3529031</FolderId>
+  <AccountId>trainingbakkalimohammed-SHEBKP</AccountId>
+  <Properties />
+  <References>
+    <Ref compId="4c373bcc-847f-4e72-b26c-6ad73b1dee1d"
+    refId="toProfile" name="Adp_Company_List" />
+    <Ref compId="4c373bcc-847f-4e72-b26c-6ad73b1dee1d"
+    refId="fromProfile" name="Adp_Company_List" />
+    <Ref compId="d5b47447-c87b-488f-b50e-4e6577568e27"
+    refId="function-2-table" name="Adp_Company_List" />
+  </References>
+  <Description />
+  <Object>
+    <Map fromProfile="4c373bcc-847f-4e72-b26c-6ad73b1dee1d"
+    toProfile="4c373bcc-847f-4e72-b26c-6ad73b1dee1d">
+      <Mappings />
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep key="2" position="2"
+        name="Cross Reference Lookup" type="CrossRefLookup"
+        x="30.0" y="10.0" category="Lookup" cacheOption="map"
+        sumEnabled="false" cacheEnabled="true">
+          <Inputs>
+            <Input key="3" name="ADP Cost Center" />
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="SAP Cost Center" />
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="d5b47447-c87b-488f-b50e-4e6577568e27"
+            skipLookupIfNoInputs="true">
+              <Input index="3" name="ADP Cost Center" refId="1" />
+              <Output index="2" name="SAP Cost Center" refId="2" />
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults />
+      <DocumentCacheJoins />
+    </Map>
+  </Object>
+</Component>

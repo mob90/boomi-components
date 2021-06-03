@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>96e1b3cb-f2f6-40d6-8184-3f10cc8f2b4f</Id>
+  <Type>process</Type>
+  <Name>Poc_Doc_Cache</Name>
+  <Version>6</Version>
+  <FolderId name="Training-Bakkali-Mohammed/Professional Developer">
+  3529031</FolderId>
+  <AccountId>trainingbakkalimohammed-SHEBKP</AccountId>
+  <Properties>
+    <Property>
+      <Name>overrides-enabled</Name>
+      <Value>true</Value>
+    </Property>
+    <Property>
+      <Name>startshape-action-type</Name>
+      <Value>Get</Value>
+    </Property>
+    <Property>
+      <Name>startshape-type</Name>
+      <Value>CONNECTOR</Value>
+    </Property>
+    <Property>
+      <Name>startshape-connector-type</Name>
+      <Value>disk</Value>
+    </Property>
+  </Properties>
+  <References>
+    <Ref compId="5d5267dd-540d-4032-a1b6-72761b380fce"
+    refId="shape1.connection" name="Work Directory" />
+    <Ref compId="a2a044d1-d75e-4f6d-9664-69f7e9bf267e"
+    refId="shape1.operation"
+    name="New Disk Connector Operation 2" />
+    <Ref compId="ae5fb821-7b16-4de4-a4df-e29ecd4e5daf"
+    refId="shape2" name="Adp_Company_List" />
+    <Ref compId="ae5fb821-7b16-4de4-a4df-e29ecd4e5daf"
+    refId="shape5.documentCache" name="Adp_Company_List" />
+    <Ref compId="db9c23e5-0b90-4a4c-a05f-ce713e42d1d9"
+    refId="shape6" name="New Map 6" />
+  </References>
+  <Description />
+  <Object>
+    <process allowSimultaneous="false" enableUserLog="false"
+    updateRunDates="true" processLogOnErrorOnly="false"
+    workload="general" purgeDataImmediately="false">
+      <shapes>
+        <shape name="shape1" userlabel="" image="start" x="96.0"
+        y="96.0" shapetype="start">
+          <configuration>
+            <connectoraction operationId="a2a044d1-d75e-4f6d-9664-69f7e9bf267e"
+            connectionId="5d5267dd-540d-4032-a1b6-72761b380fce"
+            actionType="Get" connectorType="disk"
+            parameter-profile="EMBEDDED|diskparameterchooser|a2a044d1-d75e-4f6d-9664-69f7e9bf267e"
+            hideSettings="false" allowDynamicCredentials="NONE">
+              <parameters />
+              <dynamicProperties />
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape6"
+            x="288.0" y="281.0">
+              <linesegment name="shape1.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="130.0" y="111.0" />
+              <linesegment name="shape1.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="130.0" y="111.0" />
+              <linesegment name="shape1.dragpoint1.lineseg3"
+              length="87" orient="horizontal" x="130.0"
+              y="111.0" />
+              <linesegment name="shape1.dragpoint1.lineseg4"
+              length="176" orient="vertical" x="217.0" y="111.0" />
+              <linesegment name="shape1.dragpoint1.lineseg5"
+              length="71" orient="horizontal" x="217.0"
+              y="287.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape name="shape2" userlabel="" image="doccacheload_icon"
+        x="512.0" y="0.0" shapetype="doccacheload">
+          <configuration>
+            <doccacheload docCache="ae5fb821-7b16-4de4-a4df-e29ecd4e5daf" />
+          </configuration>
+          <dragpoints />
+        </shape>
+        <shape name="shape3" userlabel="" image="stop_icon"
+        x="752.0" y="224.0" shapetype="stop">
+          <configuration>
+            <stop continue="true" />
+          </configuration>
+          <dragpoints />
+        </shape>
+        <shape name="shape4" userlabel="" image="branch_icon"
+        x="336.0" y="96.0" shapetype="branch">
+          <configuration>
+            <branch numBranches="2" />
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape2"
+            identifier="1" text="1" x="496.0" y="9.0">
+              <linesegment name="shape4.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="370.0" y="111.0" />
+              <linesegment name="shape4.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="370.0" y="111.0" />
+              <linesegment name="shape4.dragpoint1.lineseg3"
+              length="71" orient="horizontal" x="370.0"
+              y="111.0" />
+              <linesegment name="shape4.dragpoint1.lineseg4"
+              length="96" orient="vertical" x="441.0" y="15.0" />
+              <linesegment name="shape4.dragpoint1.lineseg5"
+              length="55" orient="horizontal" label="1" x="441.0"
+              y="15.0" />
+            </dragpoint>
+            <dragpoint name="shape4.dragpoint2" toShape="unset"
+            identifier="2" text="2" x="438.0" y="168.0">
+              <linesegment name="shape4.dragpoint2.lineseg1"
+              length="0" orient="horizontal" x="370.0" y="111.0" />
+              <linesegment name="shape4.dragpoint2.lineseg2"
+              length="0" orient="vertical" x="370.0" y="111.0" />
+              <linesegment name="shape4.dragpoint2.lineseg3"
+              length="42" orient="horizontal" x="370.0"
+              y="111.0" />
+              <linesegment name="shape4.dragpoint2.lineseg4"
+              length="63" orient="vertical" x="412.0" y="111.0" />
+              <linesegment name="shape4.dragpoint2.lineseg5"
+              length="26" orient="horizontal" label="2" x="412.0"
+              y="174.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape name="shape5" userlabel=""
+        image="doccacheretrieve_icon" x="576.0" y="288.0"
+        shapetype="doccacheretrieve">
+          <configuration>
+            <doccacheretrieve docCache="ae5fb821-7b16-4de4-a4df-e29ecd4e5daf"
+            docCacheIndex="1" loadAllDoc="false">
+              <cacheKeyValues>
+                <cacheKeyValue cacheKeyId="2">
+                  <parametervalue valueType="static" key="0">
+                    <staticparameter staticproperty="100000" />
+                  </parametervalue>
+                </cacheKeyValue>
+              </cacheKeyValues>
+            </doccacheretrieve>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape3"
+            x="736.0" y="233.0">
+              <linesegment name="shape5.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="610.0" y="303.0" />
+              <linesegment name="shape5.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="610.0" y="303.0" />
+              <linesegment name="shape5.dragpoint1.lineseg3"
+              length="71" orient="horizontal" x="610.0"
+              y="303.0" />
+              <linesegment name="shape5.dragpoint1.lineseg4"
+              length="64" orient="vertical" x="681.0" y="239.0" />
+              <linesegment name="shape5.dragpoint1.lineseg5"
+              length="55" orient="horizontal" x="681.0"
+              y="239.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape name="shape6" userlabel="" image="map_icon"
+        x="304.0" y="272.0" shapetype="map">
+          <configuration>
+            <map mapId="db9c23e5-0b90-4a4c-a05f-ce713e42d1d9" />
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape5"
+            x="560.0" y="297.0">
+              <linesegment name="shape6.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="338.0" y="287.0" />
+              <linesegment name="shape6.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="338.0" y="287.0" />
+              <linesegment name="shape6.dragpoint1.lineseg3"
+              length="119" orient="horizontal" x="338.0"
+              y="287.0" />
+              <linesegment name="shape6.dragpoint1.lineseg4"
+              length="16" orient="vertical" x="457.0" y="287.0" />
+              <linesegment name="shape6.dragpoint1.lineseg5"
+              length="103" orient="horizontal" x="457.0"
+              y="303.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </Object>
+  <Overrides>
+    <Connections>
+      <ConnectionOverride id="5d5267dd-540d-4032-a1b6-72761b380fce">
+
+        <field id="directory" label="Directory"
+        xpath="DiskSettings/@directory" overrideable="false" />
+      </ConnectionOverride>
+    </Connections>
+    <PartnerOverrides />
+    <Properties />
+    <Extensions>
+      <ObjectDefinitions>
+        <unusedProfiles />
+      </ObjectDefinitions>
+      <DataMaps>
+        <unusedMaps />
+      </DataMaps>
+    </Extensions>
+    <CrossReferenceOverrides>
+      <CrossReferenceOverride id="d5b47447-c87b-488f-b50e-4e6577568e27"
+      name="Adp_Company_List" overrideable="true" />
+    </CrossReferenceOverrides>
+    <PGPOverrides />
+    <DefinedProcessPropertyOverrides />
+  </Overrides>
+</Component>

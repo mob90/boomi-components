@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>d5b47447-c87b-488f-b50e-4e6577568e27</Id>
+  <Type>crossref</Type>
+  <Name>Adp_Company_List</Name>
+  <Version>2</Version>
+  <FolderId name="Training-Bakkali-Mohammed/Professional Developer">
+  3529031</FolderId>
+  <AccountId>trainingbakkalimohammed-SHEBKP</AccountId>
+  <Properties />
+  <References />
+  <Description />
+  <Object>
+    <CrossRefTable modelVersion="3" atomEnabled="false">
+      <ColumnHeaders>
+        <columnHeader>ADP Cost Center</columnHeader>
+        <columnHeader>SAP Cost Center</columnHeader>
+      </ColumnHeaders>
+      <Rows>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="709000" colIdx="0" />
+            <ref value="DGO" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="708400" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="708300" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="708200" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="708100" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="708000" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="707000" colIdx="0" />
+            <ref value="DAF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="706000" colIdx="0" />
+            <ref value="COM" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="705000" colIdx="0" />
+            <ref value="AUDIT" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="704000" colIdx="0" />
+            <ref value="RHA" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="703000" colIdx="0" />
+            <ref value="SI" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="702000" colIdx="0" />
+            <ref value="JF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="701000" colIdx="0" />
+            <ref value="SG" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="618000" colIdx="0" />
+            <ref value="COWORK" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="609000" colIdx="0" />
+            <ref value="INGIM" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="608000" colIdx="0" />
+            <ref value="RELLOC" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="607000" colIdx="0" />
+            <ref value="NO" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="606000" colIdx="0" />
+            <ref value="SO" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="605000" colIdx="0" />
+            <ref value="RHAL" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="604000" colIdx="0" />
+            <ref value="PACA" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="603000" colIdx="0" />
+            <ref value="IDF" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="602000" colIdx="0" />
+            <ref value="EST" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="601000" colIdx="0" />
+            <ref value="CO" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="600000" colIdx="0" />
+            <ref value="PRO" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="500000" colIdx="0" />
+            <ref value="MUR" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="400000" colIdx="0" />
+            <ref value="PARK" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="315000" colIdx="0" />
+            <ref value="COWORK" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="305000" colIdx="0" />
+            <ref value="DVPT" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="304000" colIdx="0" />
+            <ref value="DVPT" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="303000" colIdx="0" />
+            <ref value="DVPT" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="302000" colIdx="0" />
+            <ref value="DIMTER" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="301000" colIdx="0" />
+            <ref value="LOG" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="300000" colIdx="0" />
+            <ref value="BUR" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="200000" colIdx="0" />
+            <ref value="LGT" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="101000" colIdx="0" />
+            <ref value="BSG" colIdx="1" />
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref value="100000" colIdx="0" />
+            <ref value="DG" colIdx="1" />
+          </Values>
+        </row>
+      </Rows>
+    </CrossRefTable>
+  </Object>
+</Component>

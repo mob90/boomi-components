@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>ae5fb821-7b16-4de4-a4df-e29ecd4e5daf</Id>
+  <Type>documentcache</Type>
+  <Name>Adp_Company_List</Name>
+  <Version>4</Version>
+  <FolderId name="Training-Bakkali-Mohammed/Professional Developer">
+  3529031</FolderId>
+  <AccountId>trainingbakkalimohammed-SHEBKP</AccountId>
+  <Properties />
+  <References>
+    <Ref compId="4c373bcc-847f-4e72-b26c-6ad73b1dee1d"
+    refId="docCacheProfile" name="Adp_Company_List" />
+  </References>
+  <Description />
+  <Object>
+    <DocumentCache profileType="profile.flatfile"
+    profile="4c373bcc-847f-4e72-b26c-6ad73b1dee1d"
+    enforceSingleLucene="false">
+      <CacheIndex indexId="1" indexName="ADP Cost Center">
+        <cacheKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="ProfileElementKeyConfig" elementKey="3"
+        taglistKey="0"
+        name="ADP Cost Center (Record/Elements/ADP Cost Center)"
+        id="2"
+        alias="ADP Cost Center (Record/Elements/ADP Cost Center)" />
+      </CacheIndex>
+    </DocumentCache>
+  </Object>
+</Component>

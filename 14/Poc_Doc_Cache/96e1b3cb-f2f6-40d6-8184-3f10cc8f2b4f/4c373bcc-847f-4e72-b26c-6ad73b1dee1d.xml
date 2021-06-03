@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>4c373bcc-847f-4e72-b26c-6ad73b1dee1d</Id>
+  <Type>profile.flatfile</Type>
+  <Name>Adp_Company_List</Name>
+  <Version>2</Version>
+  <FolderId name="Training-Bakkali-Mohammed/Professional Developer">
+  3529031</FolderId>
+  <AccountId>trainingbakkalimohammed-SHEBKP</AccountId>
+  <Properties />
+  <References />
+  <Description />
+  <Object>
+    <FlatFileProfile strict="true" modelVersion="2">
+      <ProfileProperties>
+        <GeneralInfo useColumnHeaders="true"
+        fileType="delimited" />
+        <Options>
+          <DataOptions />
+          <DelimitedOptions fileDelimiter="commadelimited"
+          textQualifier="na" removeEscape="false" />
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord key="1" name="Record"
+        detectFormat="numberofcolumns" isNode="true">
+          <FlatFileElements name="Elements" key="2" isNode="true">
+            <FlatFileElement key="3" name="ADP Cost Center"
+            dataType="character" mandatory="false"
+            justification="left" enforceUnique="false"
+            validateData="false" useToIdentifyFormat="false"
+            identityValue="" minLength="0" maxLength="0"
+            isNode="true" isMappable="true">
+              <DataFormat>
+                <ProfileCharacterFormat />
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement key="4" name="SAP Cost Center"
+            dataType="character" mandatory="false"
+            justification="left" enforceUnique="false"
+            validateData="false" useToIdentifyFormat="false"
+            identityValue="" minLength="0" maxLength="0"
+            isNode="true" isMappable="true">
+              <DataFormat>
+                <ProfileCharacterFormat />
+              </DataFormat>
+            </FlatFileElement>
+          </FlatFileElements>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </Object>
+</Component>
